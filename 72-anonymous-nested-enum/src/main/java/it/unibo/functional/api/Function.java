@@ -24,12 +24,10 @@ public interface Function<I, O> {
      */
     static <T> Function<T, T> identity() {
         return new Function<T,T>() {
-
             @Override
             public T call(T input) {
                 return input;
             }
-            
         };
     }
 
